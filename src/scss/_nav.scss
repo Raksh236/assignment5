@@ -18,6 +18,11 @@ nav {
         text-decoration: none;
         letter-spacing: -0.01em;
 
+        &.active {
+          border-bottom: 2px solid $brand; // underline current page
+          padding-bottom: 2px;
+        }
+
         &:hover {
           color: $paper;
         }
