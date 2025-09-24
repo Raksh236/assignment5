@@ -1,0 +1,7 @@
+/* Minimal placeholder so the pages render if original CSS is missing */
+body{font-family:Roboto,system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;margin:0}
+main{max-width:980px;margin:0 auto;padding:16px}
+nav ul{display:flex;gap:12px;list-style:none;padding:0}
+#content{margin:24px 0}
+.greybar{height:24px;background:#eee}
+footer{font-size:.875rem;color:#555}
