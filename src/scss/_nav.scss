@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+nav {
+  @include box($w: 540px, $h: 190px, $align: right);
+
+  ul {
+    list-style: none;
+    margin-top: 95px;
+
+    li {
+      display: inline;
+      font-size: 0.8em;
+      margin-right: 10px;
+
+      a {
+        color: $brand;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+
+        &:hover {
+          color: $paper;
+        }
+      }
+    }
+  }
+
+  @include break(959px) {
+    @include box($w: auto, $h: 50px, $align: center);
+    ul {
+      margin-top: 0;
+    }
+    ul li {
+      font-size: 1em;
+      margin: 0 10px;
+    }
+  }
+
+  @include break(767px) {
+    ul li {
+      font-size: 0.8em;
+      margin: 0 5px;
+    }
+  }
+}

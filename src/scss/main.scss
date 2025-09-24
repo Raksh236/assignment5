@@ -1,0 +1,184 @@
+/* NEW */
+@use "variables" as *;
+@use "mixins" as *;
+@use "nav";
+
+body {
+  font-family: $font-family;
+  font-size: 1em;
+  line-height: 2em;
+  background: url("#{$img-path}/bg.gif") $paper repeat-x;
+  margin: 0;
+}
+
+main {
+  @include container();
+  padding: 0 10px;
+}
+
+figure {
+  @include box($w: 400px, $h: 190px);
+  @include sprite("logo.png", 0, 50px);
+  float: left;
+  display: block;
+  margin: 0;
+}
+
+header {
+  @include box($w: 100%, $h: auto, $align: center);
+  clear: both;
+  padding-top: 40px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    color: $brand;
+    font-weight: 100;
+    font-size: 4em;
+    line-height: 0;
+  }
+  h2 {
+    color: $paper;
+    font-weight: 900;
+    font-size: 2.5em;
+    line-height: 0;
+    margin-bottom: 70px;
+  }
+  h3 {
+    color: $muted;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 0;
+    margin-bottom: 50px;
+  }
+
+  @include break(767px) {
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+#headline {
+  @include box($w: 100%, $h: 130px, $bg: $headline, $align: center);
+  h1 {
+    color: $paper;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-top: 50px;
+  }
+}
+
+#content {
+  @include container($container);
+  h3 {
+    color: $muted;
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  #products {
+    width: 460px;
+    float: left;
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    article {
+      margin-bottom: 40px;
+    }
+    h4 {
+      line-height: 1em;
+    }
+  }
+
+  #testimonials {
+    width: 460px;
+    float: right;
+  }
+}
+
+.greybar {
+  @include box($w: 100%, $h: 90px, $bg: $greybar);
+  clear: both;
+  padding-top: 30px;
+}
+footer {
+  @include box($w: 100%, $h: 120px, $bg: $ink, $align: center);
+  color: $paper;
+  padding-top: 50px;
+}
+
+.social-media {
+  margin: 0 auto;
+  width: 165px;
+
+  div {
+    float: left;
+    margin-right: 5px;
+  }
+  a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+  }
+
+  .one {
+    @include sprite("social-media.png", 0, 0);
+  }
+  .two {
+    @include sprite("social-media.png", -38px, 0);
+  }
+  .three {
+    @include sprite("social-media.png", -76px, 0);
+  }
+  .four {
+    @include sprite("social-media.png", -114px, 0);
+  }
+}
+
+@include break(959px) {
+  main {
+    width: 768px;
+  }
+  #content {
+    width: auto;
+  }
+}
+@include break(767px) {
+  main {
+    width: 460px;
+  }
+  #content #products,
+  #content #testimonials {
+    width: 96%;
+    margin: 0 2%;
+    float: none;
+  }
+}
+@include break(459px) {
+  main {
+    width: 300px;
+  }
+  figure {
+    background-size: contain;
+    height: 100px;
+  }
+  #headline h1 {
+    font-size: 1.5em;
+    padding-top: 30px;
+  }
+  .greybar,
+  article img {
+    display: none;
+  }
+}

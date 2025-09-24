@@ -1,0 +1,26 @@
+@use "sass:math";
+@use "variables" as *;
+
+@mixin box($w: 100%, $h: auto, $bg: transparent, $pad: 0, $align: left) {
+  width: $w;
+  height: $h;
+  background: $bg;
+  padding: $pad;
+  text-align: $align;
+}
+
+@mixin container($w: $container) {
+  width: $w;
+  margin: 0 auto;
+  padding: 0 math.div(10px, 2);
+}
+
+@mixin break($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin sprite($file, $pos-x: 0, $pos-y: 0) {
+  background: url("#{$img-path}/#{$file}") $pos-x $pos-y no-repeat;
+}
