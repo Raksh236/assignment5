@@ -9,22 +9,23 @@ nav {
 nav ul {
   list-style: none;
   margin-top: 95px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-nav ul li {
-  display: inline;
-  font-size: 0.8em;
-  margin-right: 10px;
-}
-nav ul li a {
+nav a {
   color: #e65c43;
   text-decoration: none;
   letter-spacing: -0.01em;
+  font-size: 0.8em;
 }
-nav ul li a.active {
+nav a.active {
   border-bottom: 2px solid #e65c43;
   padding-bottom: 2px;
 }
-nav ul li a:hover {
+nav a:hover {
   color: #fff;
 }
 @media screen and (max-width: 959px) {
@@ -36,17 +37,20 @@ nav ul li a:hover {
     text-align: center;
   }
   nav ul {
-    margin-top: 0;
+    margin-top: 16px;
+    gap: 16px;
   }
-  nav ul li {
+  nav a {
     font-size: 1em;
-    margin: 0 10px;
   }
 }
 @media screen and (max-width: 767px) {
-  nav ul li {
-    font-size: 0.8em;
-    margin: 0 5px;
+  nav ul {
+    flex-wrap: wrap; /* allow wrapping if needed */
+    gap: 12px;
+  }
+  nav a {
+    font-size: 0.9em;
   }
 }
 

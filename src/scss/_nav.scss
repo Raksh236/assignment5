@@ -7,44 +7,49 @@ nav {
   ul {
     list-style: none;
     margin-top: 95px;
+    padding: 0;
 
-    li {
-      display: inline-block;
-      font-size: 0.8em;
-      margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-      a {
-        color: $brand;
-        text-decoration: none;
-        letter-spacing: -0.01em;
+  a {
+    color: $brand;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    font-size: 0.8em;
 
-        &.active {
-          border-bottom: 2px solid $brand; // underline current page
-          padding-bottom: 2px;
-        }
+    &.active {
+      border-bottom: 2px solid $brand; // underline current page
+      padding-bottom: 2px;
+    }
 
-        &:hover {
-          color: $paper;
-        }
-      }
+    &:hover {
+      color: $paper;
     }
   }
 
   @include break(959px) {
     @include box($w: auto, $h: 50px, $align: center);
+
     ul {
-      margin-top: 0;
+      margin-top: 16px;
+      gap: 16px;
     }
-    ul li {
+    a {
       font-size: 1em;
-      margin: 0 10px;
     }
   }
 
   @include break(767px) {
-    ul li {
-      font-size: 0.8em;
-      margin: 0 5px;
+    ul {
+      flex-wrap: wrap; /* allow wrapping if needed */
+      gap: 12px;
+    }
+    a {
+      font-size: 0.9em;
     }
   }
 }
