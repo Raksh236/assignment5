@@ -9,9 +9,9 @@ nav {
     margin-top: 95px;
 
     li {
-      display: inline;
+      display: inline-block;
       font-size: 0.8em;
-      margin-right: 10px;
+      margin: 10px;
 
       a {
         color: $brand;
