@@ -14,12 +14,14 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: nowrap;
 }
 nav a {
   color: #e65c43;
   text-decoration: none;
   letter-spacing: -0.01em;
   font-size: 0.8em;
+  white-space: nowrap;
 }
 nav a.active {
   border-bottom: 2px solid #e65c43;
@@ -39,6 +41,7 @@ nav a:hover {
   nav ul {
     margin-top: 16px;
     gap: 16px;
+    flex-wrap: wrap;
   }
   nav a {
     font-size: 1em;

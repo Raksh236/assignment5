@@ -13,6 +13,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: nowrap;
   }
 
   a {
@@ -20,6 +21,7 @@ nav {
     text-decoration: none;
     letter-spacing: -0.01em;
     font-size: 0.8em;
+    white-space: nowrap;
 
     &.active {
       border-bottom: 2px solid $brand; // underline current page
@@ -37,6 +39,7 @@ nav {
     ul {
       margin-top: 16px;
       gap: 16px;
+      flex-wrap: wrap;
     }
     a {
       font-size: 1em;
