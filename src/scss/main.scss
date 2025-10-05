@@ -1,6 +1,7 @@
 @use "variables" as *;
 @use "mixins" as *;
 @use "nav";
+@use "sass:color";
 
 body {
   font-family: $font-family;
@@ -235,5 +236,35 @@ footer {
   .greybar,
   article img {
     display: none;
+  }
+}
+
+.intro {
+  @include container();
+  text-align: center;
+  padding: 20px 0 10px;
+
+  h1 {
+    color: $brand;
+    font-weight: 100;
+    font-size: 3.2em;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px 0;
+  }
+
+  h2 {
+    color: color.adjust($ink, $lightness: 25%);
+
+    font-weight: 900;
+    font-size: 1.4em;
+    margin: 0 0 16px 0;
+  }
+
+  p {
+    color: $muted;
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.8em;
   }
 }
