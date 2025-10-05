@@ -74,11 +74,12 @@ main {
 
 figure {
   width: 400px;
-  height: 190px;
+  height: 140px;
   background: transparent;
   padding: 0;
   text-align: left;
-  background: url("../../images/logo.png") 0 50px no-repeat;
+  background: url("../../images/logo.png") left center no-repeat;
+  background-size: 280px auto;
   float: left;
   display: block;
   margin: 0;
