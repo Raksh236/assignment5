@@ -1,24 +1,22 @@
 nav {
   width: 540px;
-  height: 190px;
+  height: 120px;
   background: transparent;
   padding: 0;
   text-align: right;
 }
 nav ul {
   list-style: none;
-  margin-top: 95px;
+  margin-top: 48px;
   padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: nowrap;
 }
 nav a {
   color: #e65c43;
   text-decoration: none;
-  letter-spacing: -0.01em;
   font-size: 0.8em;
   white-space: nowrap;
 }
@@ -48,7 +46,6 @@ nav a:hover {
 }
 @media screen and (max-width: 767px) {
   nav ul {
-    flex-wrap: wrap; /* allow wrapping if needed */
     gap: 12px;
   }
   nav a {
@@ -72,13 +69,13 @@ main {
 }
 
 figure {
-  width: 420px;
+  width: 400px;
   height: 120px;
   background: transparent;
   padding: 0;
   text-align: left;
   background: url("../../images/logo.png") left center no-repeat;
-  background-size: 320px auto; /* controls visible logo size */
+  background-size: 320px auto;
   float: left;
   display: block;
   margin: 0;
@@ -91,8 +88,8 @@ header {
   padding: 0;
   text-align: center;
   clear: both;
-  padding-top: 28px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 header img {
   max-width: 100%;
@@ -102,28 +99,42 @@ header h1 {
   color: #e65c43;
   font-weight: 100;
   font-size: 4em;
-  line-height: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px 0;
 }
 header h2 {
   color: #fff;
   font-weight: 900;
-  font-size: 2.5em;
-  line-height: 0;
-  margin-bottom: 42px;
+  font-size: 2.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 28px 0;
 }
 header h3 {
   color: #666;
   font-weight: 400;
-  font-size: 2em;
-  line-height: 0;
-  margin-bottom: 30px;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin: 0 0 36px 0;
 }
 header img.hero {
   display: block;
-  max-width: 760px;
-  width: 78%;
+  max-width: 90%;
   height: auto;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
+}
+@media screen and (max-width: 767px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+  header h2 {
+    font-size: 1.4em;
+  }
+  header h3 {
+    font-size: 1.2em;
+  }
 }
 
 #headline {
@@ -138,6 +149,9 @@ header img.hero {
   font-size: 2.5em;
   font-weight: 100;
   padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
 #content {
