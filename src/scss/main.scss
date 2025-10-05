@@ -1,4 +1,3 @@
-/* NEW */
 @use "variables" as *;
 @use "mixins" as *;
 @use "nav";
@@ -17,9 +16,9 @@ main {
 }
 
 figure {
-  @include box($w: 400px, $h: 140px);
+  @include box($w: 420px, $h: 120px);
   @include sprite("logo.png", left, center);
-  background-size: 280px auto;
+  background-size: 320px auto; /* controls visible logo size */
   float: left;
   display: block;
   margin: 0;
@@ -28,8 +27,8 @@ figure {
 header {
   @include box($w: 100%, $h: auto, $align: center);
   clear: both;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 90px;
 
   img {
     max-width: 100%;
@@ -47,33 +46,22 @@ header {
     font-weight: 900;
     font-size: 2.5em;
     line-height: 0;
-    margin-bottom: 70px;
+    margin-bottom: 42px;
   }
   h3 {
     color: $muted;
     font-weight: 400;
     font-size: 2em;
     line-height: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   img.hero {
     display: block;
-    max-width: 90%;
+    max-width: 760px;
+    width: 78%;
     height: auto;
-    margin: 10px auto 0;
-  }
-
-  @include break(767px) {
-    h1 {
-      font-size: 2em;
-    }
-    h2 {
-      font-size: 1em;
-    }
-    h3 {
-      font-size: 1.5em;
-    }
+    margin: 12px auto 0;
   }
 }
 
@@ -167,6 +155,15 @@ footer {
   main {
     width: 768px;
   }
+
+  header {
+    padding-bottom: 70px;
+    img.hero {
+      max-width: 640px;
+      width: 82%;
+    }
+  }
+
   #content {
     width: auto;
   }
@@ -176,6 +173,24 @@ footer {
   main {
     width: 460px;
   }
+
+  header {
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    padding-bottom: 50px;
+    img.hero {
+      max-width: 420px;
+      width: 88%;
+    }
+  }
+
   #content #products,
   #content #testimonials {
     width: 96%;
@@ -188,14 +203,17 @@ footer {
   main {
     width: 300px;
   }
+
   figure {
     background-size: contain;
     height: 100px;
   }
+
   #headline h1 {
     font-size: 1.5em;
     padding-top: 30px;
   }
+
   .greybar,
   article img {
     display: none;
