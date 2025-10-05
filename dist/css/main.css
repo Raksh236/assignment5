@@ -61,7 +61,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   line-height: 2em;
-  background: url("../images/bg.gif") #fff repeat-x;
+  background: url("../../images/bg.gif") #fff repeat-x;
   margin: 0;
 }
 
@@ -78,7 +78,7 @@ figure {
   background: transparent;
   padding: 0;
   text-align: left;
-  background: url("../images/logo.png") 0 50px no-repeat;
+  background: url("../../images/logo.png") 0 50px no-repeat;
   float: left;
   display: block;
   margin: 0;
@@ -207,16 +207,16 @@ footer {
   text-indent: -9999px;
 }
 .social-media .one {
-  background: url("../images/social-media.png") 0 0 no-repeat;
+  background: url("../../images/social-media.png") 0 0 no-repeat;
 }
 .social-media .two {
-  background: url("../images/social-media.png") -38px 0 no-repeat;
+  background: url("../../images/social-media.png") -38px 0 no-repeat;
 }
 .social-media .three {
-  background: url("../images/social-media.png") -76px 0 no-repeat;
+  background: url("../../images/social-media.png") -76px 0 no-repeat;
 }
 .social-media .four {
-  background: url("../images/social-media.png") -114px 0 no-repeat;
+  background: url("../../images/social-media.png") -114px 0 no-repeat;
 }
 
 @media screen and (max-width: 959px) {

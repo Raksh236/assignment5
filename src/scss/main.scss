@@ -28,11 +28,13 @@ header {
   @include box($w: 100%, $h: auto, $align: center);
   clear: both;
   padding-top: 40px;
+  padding-bottom: 30px;
 
   img {
     max-width: 100%;
     height: auto;
   }
+
   h1 {
     color: $brand;
     font-weight: 100;
@@ -52,6 +54,14 @@ header {
     font-size: 2em;
     line-height: 0;
     margin-bottom: 50px;
+  }
+
+  // optional hero image (if present in HTML)
+  img.hero {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 10px auto 0;
   }
 
   @include break(767px) {
@@ -79,6 +89,7 @@ header {
 
 #content {
   @include container($container);
+
   h3 {
     color: $muted;
     font-size: 2em;
@@ -88,12 +99,13 @@ header {
   #products {
     width: 460px;
     float: left;
+
     img {
       float: left;
       margin-right: 20px;
     }
     article {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
     h4 {
       line-height: 1em;
@@ -103,6 +115,10 @@ header {
   #testimonials {
     width: 460px;
     float: right;
+
+    p {
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -111,6 +127,7 @@ header {
   clear: both;
   padding-top: 30px;
 }
+
 footer {
   @include box($w: 100%, $h: 120px, $bg: $ink, $align: center);
   color: $paper;
@@ -154,6 +171,7 @@ footer {
     width: auto;
   }
 }
+
 @include break(767px) {
   main {
     width: 460px;
@@ -165,6 +183,7 @@ footer {
     float: none;
   }
 }
+
 @include break(459px) {
   main {
     width: 300px;
