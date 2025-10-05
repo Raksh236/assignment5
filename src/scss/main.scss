@@ -17,8 +17,9 @@ main {
 }
 
 figure {
-  @include box($w: 400px, $h: 190px);
-  @include sprite("logo.png", 0, 50px);
+  @include box($w: 400px, $h: 140px);
+  @include sprite("logo.png", left, center);
+  background-size: 280px auto;
   float: left;
   display: block;
   margin: 0;
