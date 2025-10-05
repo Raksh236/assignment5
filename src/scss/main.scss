@@ -16,9 +16,9 @@ main {
 }
 
 figure {
-  @include box($w: 420px, $h: 120px);
+  @include box($w: 400px, $h: 120px);
   @include sprite("logo.png", left, center);
-  background-size: 320px auto; /* controls visible logo size */
+  background-size: 320px auto;
   float: left;
   display: block;
   margin: 0;
@@ -27,8 +27,8 @@ figure {
 header {
   @include box($w: 100%, $h: auto, $align: center);
   clear: both;
-  padding-top: 28px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 
   img {
     max-width: 100%;
@@ -39,29 +39,44 @@ header {
     color: $brand;
     font-weight: 100;
     font-size: 4em;
-    line-height: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px 0;
   }
   h2 {
     color: $paper;
     font-weight: 900;
-    font-size: 2.5em;
-    line-height: 0;
-    margin-bottom: 42px;
+    font-size: 2.8em;
+    line-height: 1;
+
+    text-transform: uppercase;
+    margin: 0 0 28px 0;
   }
   h3 {
     color: $muted;
     font-weight: 400;
-    font-size: 2em;
-    line-height: 0;
-    margin-bottom: 30px;
+    font-size: 1.6em;
+    line-height: 1.2;
+    margin: 0 0 36px 0;
   }
 
   img.hero {
     display: block;
-    max-width: 760px;
-    width: 78%;
+    max-width: 90%;
     height: auto;
-    margin: 12px auto 0;
+    margin: 10px auto 0;
+  }
+  @include break(767px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    h2 {
+      font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -72,6 +87,9 @@ header {
     font-size: 2.5em;
     font-weight: 100;
     padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0;
   }
 }
 

@@ -2,32 +2,29 @@
 @use "mixins" as *;
 
 nav {
-  @include box($w: 540px, $h: 190px, $align: right);
+  @include box($w: 540px, $h: 120px, $align: right);
 
   ul {
     list-style: none;
-    margin-top: 95px;
+    margin-top: 48px;
     padding: 0;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: nowrap;
   }
 
   a {
     color: $brand;
     text-decoration: none;
-    letter-spacing: -0.01em;
     font-size: 0.8em;
     white-space: nowrap;
 
     &.active {
-      border-bottom: 2px solid $brand; // underline current page
+      border-bottom: 2px solid $brand;
       padding-bottom: 2px;
     }
-
     &:hover {
       color: $paper;
     }
@@ -35,7 +32,6 @@ nav {
 
   @include break(959px) {
     @include box($w: auto, $h: 50px, $align: center);
-
     ul {
       margin-top: 16px;
       gap: 16px;
@@ -45,10 +41,8 @@ nav {
       font-size: 1em;
     }
   }
-
   @include break(767px) {
     ul {
-      flex-wrap: wrap; /* allow wrapping if needed */
       gap: 12px;
     }
     a {
