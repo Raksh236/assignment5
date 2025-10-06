@@ -382,13 +382,13 @@ body.solutions #headline h1::after {
 }
 
 body.solutions #headline {
-  margin-bottom: 0;
+  margin-bottom: -1px;
 }
 
 body.solutions #content {
   background: #fff;
   display: flow-root;
-  padding-top: 0;
+  padding-top: 1px;
   margin-top: 0;
 }
 
