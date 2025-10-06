@@ -421,3 +421,20 @@ body.support #products h3,
 body.support #testimonials h3 {
   margin-top: 0;
 }
+
+body.contact #headline::after,
+body.contact #headline h1::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.contact #headline {
+  margin-bottom: -1px;
+}
+
+body.contact #content {
+  background: #fff;
+  display: flow-root;
+  padding-top: 1px;
+  margin-top: 0;
+}
