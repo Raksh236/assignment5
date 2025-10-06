@@ -233,6 +233,7 @@ footer {
   background: url("../../images/social-media.png") -114px 0 no-repeat;
 }
 
+/* Breakpoints */
 @media screen and (max-width: 959px) {
   main {
     width: 768px;
@@ -292,6 +293,7 @@ footer {
     display: none;
   }
 }
+/* Intro blocks */
 .intro {
   width: 940px;
   margin: 0 auto;
@@ -341,6 +343,7 @@ footer {
   line-height: 1.8em;
 }
 
+/* About page two-column */
 #about {
   width: 940px;
   margin: 0 auto;
@@ -394,5 +397,27 @@ body.solutions #content {
 
 body.solutions #products h3,
 body.solutions #testimonials h3 {
+  margin-top: 0;
+}
+
+body.support #headline::after,
+body.support #headline h1::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.support #headline {
+  margin-bottom: -1px;
+}
+
+body.support #content {
+  background: #fff;
+  display: flow-root;
+  padding-top: 1px;
+  margin-top: 0;
+}
+
+body.support #products h3,
+body.support #testimonials h3 {
   margin-top: 0;
 }
