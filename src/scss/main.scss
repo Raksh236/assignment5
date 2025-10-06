@@ -326,8 +326,8 @@ footer {
 
 body.solutions #content {
   background: $paper;
-  padding-top: 0;
-  margin-top: 0;
+  padding-top: -8px;
+  margin-top: 8px;
 }
 
 body.solutions #content > *:first-child {
