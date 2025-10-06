@@ -319,3 +319,59 @@ footer {
   margin: 0 auto;
   line-height: 1.8em;
 }
+
+.intro.intro--about {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 5px;
+  text-align: center;
+  padding: 18px 0 8px;
+}
+.intro.intro--about .kicker {
+  color: #666;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+.intro.intro--about .lead {
+  color: #666;
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.8em;
+}
+
+#about {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+#about .col-left {
+  width: 460px;
+  float: left;
+}
+#about .col-right {
+  width: 460px;
+  float: right;
+}
+#about h3 {
+  color: #666;
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: 1.2;
+  margin-top: 0;
+}
+#about .values {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7em;
+}
+
+@media screen and (max-width: 767px) {
+  #about .col-left,
+  #about .col-right {
+    width: 96%;
+    margin: 0 2% 24px;
+    float: none;
+  }
+}
