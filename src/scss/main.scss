@@ -331,18 +331,16 @@ body.solutions #headline h1::after {
 
 body.solutions #headline {
   margin-bottom: 0;
-  padding-bottom: 0;
-  border: 0;
 }
 
 body.solutions #content {
   background: $paper;
-  position: relative;
-  z-index: 1;
-  margin-top: -12px;
-  padding-top: 12px;
+  display: flow-root;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-body.solutions #content > *:first-child {
-  margin-top: 0 !important;
+body.solutions #products h3,
+body.solutions #testimonials h3 {
+  margin-top: 0;
 }
