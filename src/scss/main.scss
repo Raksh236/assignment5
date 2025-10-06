@@ -50,7 +50,6 @@ header {
     font-weight: 900;
     font-size: 2.8em;
     line-height: 1;
-
     text-transform: uppercase;
     margin: 0 0 28px 0;
   }
@@ -255,7 +254,6 @@ footer {
 
   h2 {
     color: color.adjust($ink, $lightness: 25%);
-
     font-weight: 900;
     font-size: 1.4em;
     margin: 0 0 16px 0;
@@ -268,6 +266,7 @@ footer {
     line-height: 1.8em;
   }
 }
+
 .intro.intro--about {
   @include container();
   text-align: center;
@@ -324,16 +323,26 @@ footer {
   }
 }
 
-body.solutions #content {
-  background: $paper;
-  padding-top: -8px;
-  margin-top: 8px;
-}
-
-body.solutions #content > *:first-child {
-  margin-top: 0 !important;
+body.solutions #headline::after,
+body.solutions #headline h1::after {
+  content: none !important;
+  display: none !important;
 }
 
 body.solutions #headline {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+body.solutions #content {
+  background: $paper;
+  position: relative;
+  z-index: 1;
+  margin-top: -12px;
+  padding-top: 12px;
+}
+
+body.solutions #content > *:first-child {
+  margin-top: 0 !important;
 }
