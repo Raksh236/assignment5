@@ -326,16 +326,14 @@ footer {
 
 body.solutions #content {
   background: $paper;
-  padding-top: 28px;
+  padding-top: 0;
   margin-top: 0;
 }
 
-body.solutions #products article:first-child {
-  margin-top: 0;
+body.solutions #content > *:first-child {
+  margin-top: 0 !important;
 }
 
-@include break(767px) {
-  body.solutions #content {
-    padding-top: 20px;
-  }
+body.solutions #headline {
+  margin-bottom: 0;
 }

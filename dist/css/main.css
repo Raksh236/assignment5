@@ -375,3 +375,18 @@ footer {
     float: none;
   }
 }
+body.solutions #content {
+  background: #fff;
+  padding-top: 28px;
+  margin-top: 0;
+}
+
+body.solutions #products article:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  body.solutions #content {
+    padding-top: 20px;
+  }
+}
