@@ -323,3 +323,19 @@ footer {
     float: none;
   }
 }
+
+body.solutions #content {
+  background: $paper;
+  padding-top: 28px;
+  margin-top: 0;
+}
+
+body.solutions #products article:first-child {
+  margin-top: 0;
+}
+
+@include break(767px) {
+  body.solutions #content {
+    padding-top: 20px;
+  }
+}
